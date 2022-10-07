@@ -1,6 +1,6 @@
 #ifndef _MONTY_H_
 #define _MONTY_H_
-
+#define _GNU_SOURCE
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -8,6 +8,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <ctype.h>
 
 /**
  * struct var_s - struct to contain the main variables of the Monty interpreter
