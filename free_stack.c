@@ -27,4 +27,4 @@ void free_stack(int status, void *arg)
 		*stack = next;
 	}
 	var.stack_len = 0;
-
+}
