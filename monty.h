@@ -9,6 +9,8 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <ctype.h>
+#include <iostream>
+
 
 /**
  * struct var_s - struct to contain the main variables of the Monty interpreter
