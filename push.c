@@ -39,12 +39,13 @@ void m_push(stack_t **stack, unsigned int line_number)
 		fprintf(stderr,                                                                                                                                
 			"L%u: usage: push integer\n",                                                                                                                 
 			 line_number);
+		fprintf(stderr);
 		exit(EXIT_FAILURE);
 	}
 	n = atoi(arg);
 	if (!add_node(stack, n))
 	{
-		fprintf(stderr, "Error: malloc failed\n");
+		dprintf(STDOUT_FILENO, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
 	var.stack_len++;
