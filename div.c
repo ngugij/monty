@@ -22,7 +22,7 @@ void m_div(stack_t **stack, unsigned int line_number)
 	m_pop(stack, line_number);
 	if (n == 0)
 	{
-		dprintf(STDOUT_FILENO,
+		fprintf(stderr,
 			"L%u: division by zero\n",
 			line_number);
 		exit(EXIT_FAILURE);
